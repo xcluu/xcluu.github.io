@@ -1,0 +1,266 @@
+/*Grundeinstellungen html*/
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3vh;
+}
+
+/*jede section soll in einem vollen Screen angezeigt werden.*/
+.section{
+    height: 100vh;
+}
+
+/*header-einstellungen*/
+#logo{
+    display: block;
+    margin: auto;
+    width: 40vw;
+    image-resolution: 10dpi;
+    position: absolute;
+    top: 35vh;
+    left: 30vw;
+    opacity: 0.6;
+}
+h1{
+    font-size: 9vh;
+    margin-top: 10vh;
+}
+h2{
+    font-size: 7vh;
+    margin-top: 50vh;
+}
+header {
+    margin:0;
+    padding:0;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #7D2530;
+}
+#background{
+    position: absolute;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+#backgroundV{display:none}
+
+/*ueberschriften-einstellungen*/
+.under-headline{
+    font-family: 'Amatic SC', cursive;
+    color: #404040;
+    font-size: 7vh;
+    margin-top: -5vh;
+    border-bottom: 2px solid #F2A08A;
+    text-align: center;
+}
+
+#to-top{
+    font-size: 6vh;
+    color: #bb4f5d;
+    position: fixed;
+    bottom: 3%;
+    right:3%;
+    z-index: 100;
+    display: none;
+}
+#to-top:hover{
+    color: #7D2530;
+}
+
+/*slideshow-einstellungen von mir*/
+.slideshow-container{
+    width: 80vw;
+    height: 55vw;
+    position: relative;
+    margin: auto;
+    background-color: #404040;
+}
+.image{
+    height: 55vw;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/*section Steckbrief Einstellungen*/
+#Steckbrief{
+    background-color: #fff4f4;
+}
+#Steckbrief .under-headline{margin-top: 10px;}
+#Steckbrief p, h4 {padding: 0 1% 0 1%}
+footer {
+    background-color: #e9d2d2;
+    color: #6A7071;
+    font-size: 2.4vh;
+    padding-bottom: 1vh;
+
+}
+footer .fa {
+    font-size: 7vh;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+}
+footer div{text-align: center}
+footer .fa:hover{color: #bb4f5d}
+#hfu-logo {
+    height: 50px;
+    position: absolute;
+    bottom: -300vh;
+    right: 20px;
+}
+a {
+    color: #767676;
+}
+a:hover{color: #7D2530}
+
+
+/*Slider Einstellungen extern
+Quelle: https://www.w3schools.com/howto/howto_js_slideshow.asp
+ */
+.slide{
+   display: none;
+}
+
+.slide2{
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #bb4f5d;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(203, 199, 197, 0.5);
+}
+
+/*Caption Text*/
+.bilderText {
+    color: #f2a08a;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #d1d1d1;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*Aenderung des Verhaltens responsive wenn der screen sich horizontal aendert*/
+@media screen and (min-width: 786px) {
+    /*slideshow-Aenderungen*/
+    .slideshow-container{
+        width: 50vw;
+        height: 50vh;
+    }
+    .image{
+        height: 50vh; width: auto; max-width: 100%; display: block; margin: auto;
+    }
+
+    /*header Aenderungen*/
+    h1{
+        margin-top: 8vh;
+        font-size: 12vh;
+    }
+    #logo{
+        height: 25vw;
+        width: 25vw;
+        top: 25vh;
+        left: 37.5vw;
+    }
+    h2{
+        margin-top: 56vh;
+        font-size: 8vh;
+    }
+    #background{display: none}
+    #backgroundV{
+        display: block;
+        position: absolute;
+        z-index: -10;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        opacity: 0.4;
+    }
+
+    .under-headline{
+        margin-top: 0;
+    }
+
+    /*footer Aenderungen*/
+    footer{
+        margin-top: 25vh;
+    }
+    #hfu-logo{
+        bottom:-307vh;
+    }
+    footer div{
+        padding-top: 1%
+    }
+}

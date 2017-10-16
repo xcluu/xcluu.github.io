@@ -1,2 +1,105 @@
-<h1>Claudia Wegen</h1>
-<p>Aufgabe 0, 09.10.17<a href="https://xcluu.github.io/EIA2/Aufgabe0/index.html" target="_blank">Miniseite</a></p>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Claudia Wegen - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="portfolio.css"/>
+    <script language="javascript" type="text/javascript" src="portfolio.js"></script>
+    <meta name="viewport" content="width= device-width, initial-scale = 1.0">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script:700|Lato" rel="stylesheet">
+    <script src="https://use.fontawesome.com/913857d596.js"></script>
+    <!--folgende Skripts stammen NICHT von mir und dienen nur der Umsetzung eines FullPage-Scrolls....funktioniert eh nicht-->
+    <script src="jquery-3.2.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullpage.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript" src="portfolio-fp.js"></script>
+</head>
+<body>
+<div id="fullpage">
+    <!--header-->
+    <header class="section" id="header-section">
+        <img id="background" src="Bilder/z0x7G4z.png">
+        <img id="backgroundV" src="Bilder/z0x7G4zv2.png">
+        <h1 id="name-header">Claudia Wegen</h1>
+        <img id="logo" src="Bilder/logo.png" alt="Claudia Wegen - Logo">
+        <h2 id="headline">Medienkonzeption</h2>
+    </header>
+    <main>
+        <!--section Grundlagen der Gestaltung-->
+        <section id="section-mediengestaltung" class="section">
+            <h3 class="under-headline">Mediengestaltung</h3>
+            <!--slideshow-->
+            <div class="slideshow-container">
+                <div class="slide fade" style="display: block">
+                    <div class="numbertext">1 / 5</div>
+                    <img class="image" src="Bilder/001.jpg" alt="Bild1">
+                    <div class="bilderText">Rendesvouz im Wald</div>
+                </div>
+                <div class="slide fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img class="image" src="Bilder/002.jpg" alt="Bild2">
+                    <div class="bilderText">Ferien auf dem Bauernhof</div>
+                </div>
+                <div class="slide fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img class="image" src="Bilder/003.jpg" alt="Bild3">
+                    <div class="bilderText">Logo mit Initialen C und W</div>
+                </div>
+                <div class="slide fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img class="image" src="Bilder/004.jpg" alt="Bild4">
+                    <div class="bilderText">Permutation in 5 Schritten</div>
+                </div>
+                <div class="slide fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img class="image" src="Bilder/butterfly4.png" alt="Bild5">
+                    <div class="bilderText">Eigene Abgabe</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <p class="description">Im Kurs 'Grundlagen der Medien - Praktikum' sollten wir einen Odner mit unseren Arbeiten abgeben. Die Aufgabenstellungen waren dabei immer gegeben. Die letzte Aufgabe bestand darin, der Zielperson von einer guten Note zu überzeugen.</p>
+        </section>
+
+        <a href="#"><i class="fa fa-arrow-circle-up" id="to-top" aria-hidden="true"></i></a>
+
+        <!--section Entwicklung interaktiver Anwendungen-->
+        <section id="section-eia" class="section">
+            <h3 class="under-headline">Entwicklung interaktiver Anwendungen</h3>
+            <div class="slideshow-container">
+                <a href="https://sftp.hs-furtwangen.de/~wegencla/EIA1/Aufgabe13/Aufgabe13.html" target="_blank"><img class="image" src="Bilder/shop1.png" alt="Bild1"></a>
+                    <div class="bilderText">Webshop</div>
+            </div>
+            <p class="description"></p>
+        </section>
+
+        <!--section Steckbrief-->
+        <section id="Steckbrief" class="section">
+            <img id="portrait" src="Bilder/portrait.png" alt="Claudia Wegen - Portrait" style="height: 100px; display: block; margin: auto">
+            <h3 class="under-headline">Steckbrief</h3>
+            <h4 class="ueberschrift">Über mich</h4>
+            <p class="beschreibung">Ich bin Claudia Wegen, eine Studentin der HFU FuWa und gehe gerne in die Cafete. Dort arbeite ich stets zeiteffizient und effektiv. Selbst unter Zeitdruck komme ich von der Sache nicht ab und arbeite selbstsicher weiter. Ich erkenne wichtige Aspekte und setze meine Prioritäten entsprechend.</p>
+            <h4 class="ueberschrift">Kenntnisse</h4>
+            <p class="beschreibung">Durch meine schulische Ausbildung an der Feintechnikschule in Schwenningen als Informations- und Kommunikationsassistentin konnte ich verschiedene und auschschlaggebende Kentnisse erlangen, die mir im Studium ungemein weiterhelfen.</p>
+
+            <footer>
+                <img id="hfu-logo" src ="Bilder/HFU-logo.png" alt="hfu-logo">
+                <div>© Claudia Wegen 2017<br>Kontakt: claudia.wegen@hs-furtwangen.de</div>
+                <a href="https://www.facebook.com/claudia.wegen.1"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/claudora_/?hl=de"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="mailto:claudia.wegen@hs-furtwangen.de"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            </footer>
+        </section>
+    </main>
+</div>
+</body>
+</html>
